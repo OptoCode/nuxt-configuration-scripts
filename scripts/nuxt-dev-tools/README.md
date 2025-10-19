@@ -91,7 +91,7 @@ Before running the setup scripts, ensure:
   });
   ```
 
-- **Sourcemaps are enabled** (required for "Go to Code" feature):
+- **Sourcemaps are completely optional** and not required for the "Go to Code" feature to work. However, enabling sourcemaps can improve your overall debugging experience:
 
   ```typescript
   export default defineNuxtConfig({
@@ -205,3 +205,4 @@ To switch to a different editor, simply run the setup script again and select a 
 - Sourcemaps are essential for the "go to code" feature to work properly
 - This configuration works with Nuxt 4.1.3 and the latest DevTools
 - Make sure your development server is running before testing the "Go to Code" feature
+
