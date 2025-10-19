@@ -1,6 +1,6 @@
 # Nuxt DevTools Editor Configuration Scripts
 
-This directory contains automated scripts to configure Nuxt DevTools to work seamlessly with your preferred code editor. These scripts ensure that the "Go to Code" feature in Nuxt DevTools opens files directly in your editor.
+This directory contains automated scripts to configure Nuxt DevTools to work seamlessly with your preferred code editor. These scripts ensure that the "Toggle Component Inspector" feature in Nuxt DevTools opens files directly in your editor.
 
 ## 🚀 Quick Start
 
@@ -91,7 +91,7 @@ Before running the setup scripts, ensure:
   });
   ```
 
-- **Sourcemaps are completely optional** and not required for the "Go to Code" feature to work. However, enabling sourcemaps can improve your overall debugging experience:
+- **Sourcemaps are completely optional** and not required for the "Toggle Component Inspector" feature to work. However, enabling sourcemaps can improve your overall debugging experience:
 
   ```typescript
   export default defineNuxtConfig({
@@ -133,12 +133,12 @@ Before running the setup scripts, ensure:
 3. **Check persistence**: Close and reopen your terminal
 4. **Test manually**: Try `cursor .` or `code .` in your project directory
 
-### DevTools "Go to Code" Not Working
+### DevTools "Toggle Component Inspector" Not Working
 
 1. **Verify configuration**: Run the verification script
 2. **Check sourcemaps**: Ensure they're enabled in `nuxt.config.ts`
 3. **Restart dev server**: `npm run dev`
-4. **Test in browser**: Open Nuxt DevTools and try the "go to code" feature
+4. **Test in browser**: Open Nuxt DevTools and try the "Toggle Component Inspector" feature
 5. **Check browser console**: Look for any error messages
 6. **Verify file paths**: Ensure the file exists and is accessible
 
@@ -177,7 +177,7 @@ After running the setup script:
 3. **Open your app in the browser**
 4. **Open Nuxt DevTools** (floating button in bottom-right)
 5. **Navigate to Components or Pages tab**
-6. **Click "go to code"** next to any component/page
+6. **Click "Toggle Component Inspector"** next to any component/page
 7. **Verify your editor opens** with the correct file
 
 ## 🔄 Switching Editors
@@ -202,7 +202,6 @@ To switch to a different editor, simply run the setup script again and select a 
 
 - The `nuxt.config.ts` configuration works for all editors
 - Only the `LAUNCH_EDITOR` environment variable needs to change when switching editors
-- Sourcemaps are essential for the "go to code" feature to work properly
+- Sourcemaps are essential for the "Toggle Component Inspector" feature to work properly
 - This configuration works with Nuxt 4.1.3 and the latest DevTools
-- Make sure your development server is running before testing the "Go to Code" feature
-
+- Make sure your development server is running before testing the "Toggle Component Inspector" feature
